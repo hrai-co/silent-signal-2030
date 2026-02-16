@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulation | SilentSignal 2030</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Description -->
+    <meta name="description" content="Interactive growth simulation model demonstrating how behavioral signals influence projected professional trajectory.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =====================================================
+         NAVIGATION BAR
+         Shared across all pages
+    ====================================================== -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">SilentSignal 2030</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="problem.html">The Problem</a></li>
+                    <li><a href="signals.html">Signals</a></li>
+                    <li><a href="simulation.html">Simulation</a></li>
+                    <li><a href="vision.html">Vision 2030</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =====================================================
+         HERO SECTION
+         Introduces trajectory modeling concept
+    ====================================================== -->
+    <section class="hero simulation-hero">
+        <div class="container">
+            <h1>Growth Simulation</h1>
+            <p>
+                Adjust behavioral signals and visualize how consistent patterns 
+                influence your projected professional trajectory.
+            </p>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         SIMULATION SECTION
+         Left: Behavioral Inputs
+         Right: Growth Fill Visualization (Water Model)
+         (Conceptual UX Prototype – No Backend Logic)
+    ====================================================== -->
+    <section class="simulation-section">
+        <div class="container simulation-grid">
+
+            <!-- =========================
+                 LEFT: SIGNAL CONTROLS
+            ========================== -->
+            <div class="controls">
+                <h2>Adjust Your Signals</h2>
+
+                <label>Collaboration</label>
+                <input type="range" min="0" max="100" value="50" class="slider">
+
+                <label>Communication</label>
+                <input type="range" min="0" max="100" value="50" class="slider">
+
+                <label>Initiative</label>
+                <input type="range" min="0" max="100" value="50" class="slider">
+
+                <label>Adaptability</label>
+                <input type="range" min="0" max="100" value="50" class="slider">
+
+                <label>Responsiveness</label>
+                <input type="range" min="0" max="100" value="50" class="slider">
+
+                <label>Emotional Intelligence</label>
+                <input type="range" min="0" max="100" value="50" class="slider">
+            </div>
+
+            <!-- =========================
+                 RIGHT: WATER FILL MODEL
+            ========================== -->
+            <div class="graph-container">
+
+                <div class="graph-background">
+
+                    <!-- 
+                        Growth Fill Element
+                        Height dynamically updated via script.js
+                        Represents cumulative behavioral strength
+                    -->
+                    <div class="growth-fill" id="growthFill"></div>
+
+                    <!-- Percentage Display Inside Tank -->
+                    <div class="tank-percentage" id="tankPercentage">50%</div>
+
+                </div>
+
+                <!-- Dynamic Tier Label -->
+                <div class="status-label" id="statusLabel">Developing</div>
+
+                <!-- Dynamic Insight Interpretation -->
+                <div class="insight-text" id="insightText"></div>
+                <p class="simulation-note">
+                    *This is a conceptual visualization prototype. A real-world implementation 
+                    would integrate behavioral analytics systems and structured performance data.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer>
+        <div class="container">
+            <p>
+                © 2030 SilentSignal Prototype | Academic Concept Project 
+                (Trajectory Simulation Model)
+            </p>
+        </div>
+    </footer>
+
+    <!-- Global JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
